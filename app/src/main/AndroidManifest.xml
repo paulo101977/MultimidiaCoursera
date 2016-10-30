@@ -2,11 +2,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.heroku.a1977.paulo10.multimidiaapp">
 
-    <uses-sdk android:minSdkVersion="9">
-
-    </uses-sdk>
+    <uses-sdk android:minSdkVersion="9"></uses-sdk>
 
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +23,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ListVideoActivity"
+            android:label="@string/title_activity_list_video"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
