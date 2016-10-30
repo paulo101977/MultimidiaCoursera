@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Multimidia App</string>
+    <string name="continue_btn">Continue</string>
 </resources>
