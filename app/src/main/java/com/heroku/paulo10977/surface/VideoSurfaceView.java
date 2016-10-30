@@ -25,25 +25,35 @@ public class VideoSurfaceView extends SurfaceView implements SurfaceHolder.Callb
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public VideoSurfaceView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        init();
+        if(!isInEditMode()) {
+            init();
+        }
     }
 
     public VideoSurfaceView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        init();
+        if(!isInEditMode()) {
+            init();
+        }
     }
     public VideoSurfaceView(Context context, AttributeSet attrs) {
         super(context, attrs);
-        init();
+        if(!isInEditMode()) {
+            init();
+        }
     }
     public VideoSurfaceView(Context context) {
         super(context);
-        init();
+        if(!isInEditMode()) {
+            init();
+        }
     }
 
     private void init (){
         mp = new MediaPlayer();
         getHolder().addCallback(this);
+
+
     }
 
     @Override

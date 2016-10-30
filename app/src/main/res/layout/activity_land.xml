@@ -14,8 +14,6 @@
 
     <LinearLayout
         android:layout_gravity="center_horizontal|top"
-        android:layout_below="@+id/backgroundSurfaceView"
-        android:layout_centerHorizontal="true"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_marginLeft="50dp"
@@ -29,9 +27,11 @@
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
             android:text="New Button"
             android:id="@+id/button"
-            android:layout_centerHorizontal="true" />
+            android:padding="15dp"
+            android:textColor="@android:color/white" />
 
     </LinearLayout>
 
