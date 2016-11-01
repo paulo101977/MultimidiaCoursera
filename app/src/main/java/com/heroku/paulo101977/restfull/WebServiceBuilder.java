@@ -5,15 +5,17 @@ package com.heroku.paulo101977.restfull;
  */
 
 //TODO implement this builder class
-public class WebServiceBuilder extends WebService {
+public class WebServiceBuilder extends AbstractWebService {
 
-    private WebServiceBuilder(){
+    private String url = null;
 
+    private WebServiceBuilder(String url){
+        this.url = url;
     }
 
     @Override
-    public WebService webServiceBuilder(String url) {
-        WebService builder = new WebServiceBuilder();
+    public AbstractWebService webServiceBuilder(String url) {
+        AbstractWebService builder = new WebServiceBuilder(url);
         return builder;
     }
 }
