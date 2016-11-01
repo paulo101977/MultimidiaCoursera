@@ -10,6 +10,9 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import com.heroku.paulo101977.restfull.AbstractWebService;
+import com.heroku.paulo101977.restfull.WebServiceBuilder;
+
 public class ListVideoActivity extends AppCompatActivity {
 
     private final String TAG = this.getClass().getSimpleName();
@@ -45,6 +48,10 @@ public class ListVideoActivity extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, android.R.id.text1, values);
+
+        //TODO: // FIXME: 01/11/2016
+        AbstractWebService webService = WebServiceBuilder.webServiceBuilder("localhost:3000/videos");
+        webService.execute(new String[]{""});
 
         listView.setAdapter(adapter);
     }

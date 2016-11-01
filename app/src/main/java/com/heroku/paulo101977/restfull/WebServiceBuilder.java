@@ -13,8 +13,7 @@ public class WebServiceBuilder extends AbstractWebService {
         this.url = url;
     }
 
-    @Override
-    public AbstractWebService webServiceBuilder(String url) {
+    public static AbstractWebService webServiceBuilder(String url) {
         AbstractWebService builder = new WebServiceBuilder(url);
         return builder;
     }

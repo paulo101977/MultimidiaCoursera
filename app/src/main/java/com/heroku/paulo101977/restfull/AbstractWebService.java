@@ -29,13 +29,11 @@ public abstract class AbstractWebService extends AsyncTask<String, Void, String>
         super.onPostExecute(s);
     }
 
-    //TODO: implement a Class to build this object (Builder)
-    public abstract AbstractWebService webServiceBuilder(String url);
 
     //TODO: It will be moved to Client Class
 
-    public abstract void getMethod();
-    public abstract void postMethod();
-    public abstract void updateMethod();
-    public abstract void removeMethod();
+    //public abstract void getMethod();
+    //public abstract void postMethod();
+    //public abstract void updateMethod();
+    //public abstract void removeMethod();
 }
