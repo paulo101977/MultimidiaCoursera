@@ -33,6 +33,7 @@ public abstract class AbstractWebService extends AsyncTask<String, Void, String>
     public abstract AbstractWebService webServiceBuilder(String url);
 
     //TODO: It will be moved to Client Class
+
     public abstract void getMethod();
     public abstract void postMethod();
     public abstract void updateMethod();
